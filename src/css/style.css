@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+a {
+    color: inherit;
+}
+
 :root {
     --text-color: #FFFFFF;
+    --text-color-footer: #888888;
     --yellow-color: #F9BF3B;
     --dark-color: #4A4A4A;
     --text-shadow: #00000038;
@@ -14,12 +19,19 @@
     --bg-color: #EFEFEF;
     --title-color: #252525;
     --bg-color-info: #0f0B0B;
+    --bg-color-footer: #1A1A1A;
 }
 
 .container {
     position: relative;
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.container--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -252,8 +264,7 @@
 }
 
 .gifts__img {
-    display: block;
-    margin: 0 auto;
+    width: 161px;
 }
 
 .gifts__text {
@@ -266,4 +277,37 @@
 
 .gifts .btn {
     margin-top: 60px;
+}
+
+.webinar {
+    background-color: var(--bg-color-info);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.webinar__title {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.webinar__subtitle {
+    margin-top: 20px;
+}
+
+.webinar__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 23px;
+    color: var(--bg-color);
+}
+
+.footer {
+    background-color: var(--bg-color-footer);
+    padding: 60px 0 60px 0;
+    color: var(--text-color-footer);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
 }
